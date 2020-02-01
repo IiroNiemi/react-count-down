@@ -16,13 +16,13 @@ const DateBetween = (startDate, endDate) => {
 
   let between = []
 
-  days > 0 ? between.push(`${days} päivää${days > 1 ? 's' : ''}`) : false
-  hours > 0 ? between.push(`${hours} tuntia${hours > 1 ? 's' : ''}`) : false
+  days > 0 ? between.push(`${days} päivää${days > 1 ? ' ' : ''}`) : false
+  hours > 0 ? between.push(`${hours} tuntia${hours > 1 ? ' ' : ''}`) : false
   minutes > 0
-    ? between.push(`${minutes} minuuttia${minutes > 1 ? 's' : ''}`)
+    ? between.push(`${minutes} minuuttia${minutes > 1 ? ' ' : ''}`)
     : false
   seconds > 0
-    ? between.push(`${seconds} sekuntia${seconds > 1 ? 's' : ''}`)
+    ? between.push(`${seconds} sekuntia${seconds > 1 ? ' ' : ''}`)
     : false
 
   return between.join(' ')
