@@ -19,21 +19,17 @@ const DateBetween = (startDate, endDate) => {
 	
 	console.log(distance);
 
-  let days = Math.floor(distance / day)
-  let hours = Math.floor((distance % day) / hour)
-  let minutes = Math.floor((distance % hour) / minute)
-  let seconds = Math.floor((distance % minute) / second)
+	let days = Math.floor(distance / day)
+	let hours = Math.floor((distance % day) / hour)
+	let minutes = Math.floor((distance % hour) / minute)
+	let seconds = Math.floor((distance % minute) / second)
 
   let between = []
 
-  days > 0 ? between.push(`${days} päivää`) : false
-  hours > 0 ? between.push(`${hours} tuntia`) : false
-  minutes > 0
-    ? between.push(`${minutes} minuuttia`)
-    : false
-  seconds > 0
-    ? between.push(`${seconds} sekuntia`)
-    : false
+  between.push(`${days} päivää`)
+  between.push(`${hours} tuntia`)
+  between.push(`${minutes} minuuttia`)
+  between.push(`${seconds} sekuntia`)
 
   return between.join(' ')
 }
