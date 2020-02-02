@@ -60,7 +60,7 @@ export default class Countdown extends Component {
       fontSize: '150%',
       fontWeight: '200',
       lineHeight: 1.5,
-      color: '#03CC85'
+      color: '#ff5ebc'
     }
 
     return (
