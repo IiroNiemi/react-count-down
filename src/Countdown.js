@@ -38,7 +38,7 @@ export default class Countdown extends Component {
     }
 
     this.setState({
-      remaining: remaining
+			remaining: remaining ? remaining : 'Pitäs olla jo! :)'
 		})
 		
   }
