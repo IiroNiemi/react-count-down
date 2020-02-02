@@ -32,14 +32,16 @@ export default class Countdown extends Component {
     let endDate = new Date(this.props.options.endDate)
     let remaining = DateBetween(startDate, endDate)
 
+		/*
     if (remaining === false) {
       window.clearInterval(this.interval)
       this.props.options['cb'] ? this.props.options.cb() : false
     }
-
+		*/
     this.setState({
-      remaining: remaining ? remaining : 'time expired'
-    })
+      remaining: remaining
+		})
+		
   }
 
   render() {
